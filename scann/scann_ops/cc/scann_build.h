@@ -27,6 +27,7 @@ class ScannExt {
                  int dimensionality);
   int WriteIndex(const char* file, bool write_dataset = true);
   void AddDocsWithIds(const std::vector<int64_t> &ids, const std::vector<float> &vecs);
+  void SetNprobe(int nprobe) { nprobe_ = nprobe; }
  private:
   int nprobe_ = -1;
   int training_thread_num_ = 2;
