@@ -64,7 +64,8 @@ static void split_string(const std::string& s, std::vector<std::string>& v, cons
 static void RuntimeErrorIfNotOk(const char* prefix, const Status& status) {
   if (!status.ok()) {
     std::string msg = prefix + std::string(status.error_message());
-    throw std::runtime_error(msg);
+    LOG(ERROR) << "scann index has error: " << msg;
+    //throw std::runtime_error(msg);
   }
 }
 
