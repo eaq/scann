@@ -93,14 +93,14 @@ def create_build_configuration():
     required_packages = f.read().splitlines()
 
   print()
-  if args.no_deps:
-    print("> Using pre-installed Tensorflow.")
-  else:
-    print("> Installing", required_packages)
-    install_cmd = [python_path, "-m", "pip", "install"]
-    install_cmd.extend(pip_install_options)
-    install_cmd.extend(required_packages)
-    subprocess.check_call(install_cmd)
+  # if args.no_deps:
+  #   print("> Using pre-installed Tensorflow.")
+  # else:
+  #   print("> Installing", required_packages)
+  #   install_cmd = [python_path, "-m", "pip", "install"]
+  #   install_cmd.extend(pip_install_options)
+  #   install_cmd.extend(required_packages)
+  #   subprocess.check_call(install_cmd)
 
   if os.path.isfile(_BAZELRC):
     os.remove(_BAZELRC)

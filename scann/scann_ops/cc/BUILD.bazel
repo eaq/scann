@@ -27,7 +27,7 @@ cc_library(
         ":scann_ops",
         ":scann_ops_kernels",
     ],
-    alwayslink = 1,
+    #alwayslink = 1,
 #    linkstatic = True,
 )
 
@@ -36,10 +36,9 @@ cc_library(
     srcs = ["ops/scann_ops.cc"],
     tags = ["local"],
     deps = [
-        "@org_tensorflow//tensorflow/core:tensorflow",
-        
+        "//scann/oss_wrappers:tf_dependency",
     ],
-    alwayslink = 1,
+    #alwayslink = 1,
 )
 
 cc_binary(
@@ -70,7 +69,7 @@ cc_library(
         "//scann/data_format:dataset",
         "@com_google_absl//absl/memory",
         "@com_google_absl//absl/synchronization",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
     alwayslink = 1,
@@ -84,7 +83,8 @@ cc_library(
     deps = [
         "//scann/data_format:dataset",
         "@com_google_absl//absl/types:span",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "@com_google_absl//absl/container:inlined_vector",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )

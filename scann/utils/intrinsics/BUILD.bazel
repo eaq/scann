@@ -15,7 +15,7 @@ cc_library(
         "//scann/utils:types",
         "@com_google_absl//absl/base",
         "@com_google_absl//absl/flags:flag",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )

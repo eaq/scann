@@ -44,7 +44,7 @@ cc_library(
         "//scann/utils:types",
         "@com_google_absl//absl/base",
         "@com_google_absl//absl/flags:flag",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -63,7 +63,7 @@ cc_library(
         "//scann/utils:types",
         "//scann/utils:zip_sort",
         "@com_google_absl//absl/strings",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -100,7 +100,7 @@ cc_library(
         "@com_google_absl//absl/memory",
         "@com_google_absl//absl/strings",
         "@com_google_absl//absl/time",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -113,7 +113,7 @@ cc_library(
         "//scann/oss_wrappers:scann_serialize",
         "//scann/utils:types",
         "@com_google_absl//absl/strings",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -135,7 +135,7 @@ cc_library(
         "@com_google_absl//absl/base",
         "@com_google_absl//absl/flags:flag",
         "@com_google_absl//absl/time",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -153,7 +153,7 @@ cc_library(
         "//scann/utils:types",
         "@com_google_absl//absl/base",
         "@com_google_absl//absl/flags:flag",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )

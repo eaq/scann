@@ -31,7 +31,7 @@ cc_library(
         "//scann/utils:types",
         "@com_google_absl//absl/base",
         "@com_google_absl//absl/flags:flag",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -65,7 +65,7 @@ cc_library(
         "@com_google_absl//absl/flags:flag",
         "@com_google_absl//absl/random",
         "@com_google_absl//absl/random:distributions",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
     # The linker gets confused by explicitly instantiated templates  This
@@ -94,7 +94,7 @@ cc_library(
         "//scann/utils:types",
         "//scann/utils/intrinsics:attributes",
         "//scann/utils/intrinsics:sse4",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -119,7 +119,7 @@ cc_library(
         "//scann/utils:types",
         "//scann/utils/intrinsics:attributes",
         "//scann/utils/intrinsics:avx2",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -144,7 +144,7 @@ cc_library(
         "//scann/utils:types",
         "//scann/utils/intrinsics:attributes",
         "//scann/utils/intrinsics:avx512",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -189,7 +189,7 @@ cc_library(
         "//scann/utils:types",
         "@com_google_absl//absl/base",
         "@com_google_absl//absl/flags:flag",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
@@ -240,7 +240,7 @@ cc_library(
         "//scann/utils:dataset_sampling",
         "//scann/utils:gmm_utils",
         "//scann/utils:types",
-        "@org_tensorflow//tensorflow/core:tensorflow",
+        "//scann/oss_wrappers:tf_dependency",
         
     ],
 )
